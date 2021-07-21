@@ -12,3 +12,61 @@ body {
     min-height: 100vh;
     background: #000;
 }
+
+.container {
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20;
+}
+
+.container .box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 420px;
+    margin: 20px;
+    background: #fff;
+}
+
+.container .box .content {
+    padding: 30px;
+    text-align: center;
+}
+
+.container .box .content .quto {
+    max-width: 48px;
+}
+
+.container .box .content p {
+    padding: 20px 0;
+}
+
+.container .box .content .mus {
+    max-width: 72px;
+    border-radius: 50%;
+}
+
+.container .box .content h3 {
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+@media (max-width: 1050px) {
+    .container {
+        justify-content: center;
+    }
+}
+
+@media(max-width:768px) {
+    .container .box {
+        width: 100%;
+        height: auto;
+    }
+}
